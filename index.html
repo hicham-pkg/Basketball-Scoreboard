@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="teams">
+            <div class="team">
+                <h3>HOME</h3>
+                <div id="box-home">0</div>
+                <div class="btn">
+                    <button onclick="add1PointHome()">+1</button>
+                    <button onclick="add2PointsHome()">+2</button>
+                    <button onclick="add3PointsHome()">+3</button>
+                </div>
+            </div>
+            <div class="team">
+                <h3>GUEST</h3>
+                <div id="box-guest">0</div>
+                <div class="btn">
+                    <button onclick="add1PointGuest()">+1</button>
+                    <button onclick="add2PointsGuest()">+2</button>
+                    <button onclick="add3PointsGuest()">+3</button>
+                </div>
+            </div>
+        </div>
+        <div id="winning-message"></div>
+        <div id="new">
+        <button id="btn" onclick="newGame()">New Game</button>
+        <button id="btn" onclick="endGame()">End Game</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
